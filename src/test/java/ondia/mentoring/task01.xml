@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"  >
+
+    <!-- Task 01 - Cross01 clasındaki methodu cross çalıştıralım - edge ve firefox -->
+
+    <test verbose="2" preserve-order="true"
+          name="ParallelTest-Task01-edge" >
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="ondia.mentoring.Cross01">
+                <methods>
+                    <include name="">
+
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="ParallelTest-Task01-firefox" >
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="ondia.mentoring.Cross01"></class>
+        </classes>
+    </test>
+
+</suite>
