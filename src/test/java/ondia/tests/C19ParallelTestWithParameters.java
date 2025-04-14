@@ -15,5 +15,4 @@ public class C19ParallelTestWithParameters {
         assertTrue(driver.getTitle().contains("Google"));
         driver.quit();
     }
-
 }

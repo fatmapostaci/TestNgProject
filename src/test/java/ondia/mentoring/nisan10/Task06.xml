@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="3" >
+
+    <!--
+// Task 06 - Cross01 i class olarak ; Cross_02 yi de methodlarını ayrı ayrı browserlarda çalışacak şekilde cross ve paralel çalıştıralım -->
+
+    <test verbose="2" preserve-order="true"
+          name="Cross01-Firefox">
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross01"> </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="Cross02-test01-Edge">
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross02">
+                <methods>
+                    <include name="test01"> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="Cross02-test02-Chrome">
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross02">
+                <methods>
+                    <include name="test02"> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

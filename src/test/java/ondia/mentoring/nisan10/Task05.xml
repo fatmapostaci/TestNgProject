@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!-- Task 05 - Cross01 i class olarak ; Cross_02 yi de methodlarını ayrı ayrı browserlarda çalışacak şekilde cross çalıştıralım -->
+    
+    <test name="Cross01 class olarak çalıştı">
+        <parameter name="browser" value="firefox"> </parameter>
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross01"> </class>
+        </classes>
+    </test>
+    
+    <test name="Cross02 methodları farklı browserlarda cross çalışacak">
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross02">
+                <methods>
+                    <include name="test01"> <parameter name="browser" value="edge"> </parameter> </include>
+                    <include name="test02"> <parameter name="browser" value="chrome"> </parameter> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

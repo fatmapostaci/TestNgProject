@@ -26,7 +26,7 @@ public class ExtentReportUtils extends TestBase {
 //        RAPOR ADI VE OLUŞTURULACAĞI YER
 //        YOL
         String currentDate = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-        String filePath = System.getProperty("user.dir") + "\\test-output\\reports\\testReport_" + currentDate;
+        String filePath = System.getProperty("user.dir") + "\\test-output\\reports\\testReport_" + currentDate + ".html";
 //        HTML şablonunu oluşturmak için extent spark reporter kullanarak yolu belirle
         extentSparkReporter = new ExtentSparkReporter(filePath);
 //        Extent raporu oluştur

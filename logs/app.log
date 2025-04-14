@@ -1,0 +1,8 @@
+2025-04-14 17:25:19 [main] INFO  ondia.mentoring.nisan14.LoglamaCalismasi2 - Login testi başladı
+2025-04-14 17:25:19 [main] DEBUG ondia.mentoring.nisan14.LoglamaCalismasi2 - Kullanıcı adı: user1
+2025-04-14 17:25:19 [main] DEBUG ondia.mentoring.nisan14.LoglamaCalismasi2 - Şifre: 1234
+2025-04-14 17:25:19 [main] INFO  ondia.mentoring.nisan14.LoglamaCalismasi2 - Login başarılı!
+2025-04-14 17:25:26 [main] INFO  ondia.mentoring.nisan14.LoglamaCalismasi2 - Login testi başladı
+2025-04-14 17:25:26 [main] DEBUG ondia.mentoring.nisan14.LoglamaCalismasi2 - Kullanıcı adı: user1
+2025-04-14 17:25:26 [main] DEBUG ondia.mentoring.nisan14.LoglamaCalismasi2 - Şifre: 1234
+2025-04-14 17:25:26 [main] INFO  ondia.mentoring.nisan14.LoglamaCalismasi2 - Login başarılı!

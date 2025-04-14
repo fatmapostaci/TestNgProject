@@ -1,6 +1,9 @@
 package ondia.utils;
 
 
+import ondia.mentoring.nisan14.LoglamaCalismasi;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -11,6 +14,9 @@ import java.time.Duration;
 public abstract class TestBase {//Classı abstract yaparak bu classtan obje oluşturulmasını engelliyoruz.
 
     protected static WebDriver driver;
+    //bu logger değişkeni extend eden her classta çağırılabilir
+    protected final Logger logger = LogManager.getLogger(this.getClass());
+
 
     @BeforeClass//Her Class öncesi çalışır.
     public void setUp() {

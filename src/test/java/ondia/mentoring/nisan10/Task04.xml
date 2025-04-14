@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+
+
+    <!-- // Task 04 - Cross02 clasındaki 2 methodu cross ve parallel çalıştıralım - edge ve firefox-->
+
+    <test name="Task04-Cross ve Parallel-Edge">
+        <parameter name="browser" value="edge"> </parameter>
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross02"> </class>
+        </classes>
+    </test>
+
+    <test name="Task04-Cross and Parallel-Firefox ">
+        <parameter name="browser" value="firefox"> </parameter>
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross02"> </class>
+        </classes>
+    </test>
+
+
+</suite>

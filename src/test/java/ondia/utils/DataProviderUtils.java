@@ -29,7 +29,7 @@ public class DataProviderUtils {
 
     @DataProvider
     public Object[][] namePassCommProviderFromExcelFile(){
-        String path = "resources/username_password.xlsx";
+        String path = "/username_password.xlsx";
         ExcelUtils excelUtils = new ExcelUtils(path,"Sheet1");
         return excelUtils.getDataArrayWithoutFirstRow();
     }

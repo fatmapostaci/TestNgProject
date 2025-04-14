@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Suite" >
+
+    <!-- Task 03  Cross02 clasındaki 2 methodu cross çalıştıralım-->
+    <test verbose="2" preserve-order="true"
+          name="CrossTest-Task03-edge">
+        <parameter name="browser" value="edge"> </parameter>
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross02">
+                <methods>
+                    <include name="test01"> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="CrossTest-Task03-firefox">
+        <parameter name="browser" value="firefox"> </parameter>
+        <classes>
+            <class name="ondia.mentoring.nisan10.Cross02">
+                <methods>
+                    <include name="test02"> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
