@@ -53,6 +53,8 @@ public class Cross01 extends DriverThreadLocal_CrossParalell {
                 sendKeys("kaya").
                 perform();
         Thread.sleep(2000);
+
+        System.out.println("Cross01 testi tamamlandı");
         DriverThreadLocal_CrossParalell.quitDriver();
     }
 }

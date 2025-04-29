@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="false"
+          name="tests/verbose.java">
+
+        <groups>
+            <run>
+                <include name="A"> </include>
+            </run>
+        </groups>
+
+
+        <packages>
+            <package name="ondia.tests">
+            </package>
+
+        </packages>
+
+
+    </test>
+</suite>
+
+
+<!--soru    Before Grou A methodunu neder çağırır?
+#Login test executed.
+        Logout test executed.
+        Before Group A
+        groups = "A" test executed.
+        groups = "A" test executed.
+        After Group A
+-->

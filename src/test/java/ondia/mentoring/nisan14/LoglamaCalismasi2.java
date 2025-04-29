@@ -15,7 +15,7 @@ public class LoglamaCalismasi2 extends DriverThreadLocal_CrossParalell {
         logger.debug("Kullanıcı adı: " + username);
         logger.debug("Şifre: " + password);
 
-        boolean result = username.equals("user1") && password.equals("1234");fh
+        boolean result = username.equals("user1") && password.equals("1234");
 
         if (result) {
             logger.info("Login başarılı!");
